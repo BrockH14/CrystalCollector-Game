@@ -45,19 +45,31 @@ $(".amet").on("click", function(){
     $("#UserGuess").text(guessedNum);
 });
 
-
 //update display 
 
 //win condition, match guessNum to randNumber
+    if (guessedNum === randNumber){
+        wins++
+        resetGame()
+        updateDisplay()
+    }
 
 //lose condition, guessNum over randNumber
-
-
+    if (guessedNum > randNumber){
+        loses++
+        resetGame()
+        updateDisplay()
+    }
 
 }
-initializegame();
 
+function updateDisplay(){
+    $("#Wins").text(wins);
+    $("#Losses").text(loses);
+}
 //reset game
 function resetGame(){
-
+    initializegame();
 }
+initializegame();
+updateDisplay();
