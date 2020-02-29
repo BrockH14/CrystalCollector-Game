@@ -29,8 +29,8 @@ body {
     background-color: #f9ffc7;
 }
 .test{
-    background-color: #6ae994 !important;
-    color: #ff9b76;
+    background-color: #414141 !important;
+    color: #eaff76;
     text-shadow: -1px -1px 0 #000000,  1px -1px 0 #000000,  -1px 1px 0 #000000,  1px 1px 0 #000000;
 
 }
