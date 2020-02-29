@@ -22,14 +22,10 @@ function start(){
     ametNum = Math.floor(Math.random() * 11) + 1;
     $("#UserGuess").empty();
 
-console.log(rubyNum);
-console.log(sappNum);
-console.log(topaNum);
-console.log(ametNum);
-
 //display randNumber 
 $("#RandomNumber").text(randNumber);
-
+$("#Wins").text(wins);
+$("#Losses").text(loses);
 }
 $(".bt").on("click", function(){
     $("#UserGuess").text(guessedNum);
